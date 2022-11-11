@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>侧边栏滑进滑出效果</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- 定义网页主体内容的容器 -->
+    <div class="body" id="wrap">
+        <!-- 定义左上角用户头像 -->
+        <a class="avatar_small"></a>
+        <!-- 网页主体内容 -->
+        <img src="images/58suyun.png" />
+    </div>
+    <!-- 定义网页遮罩 -->
+    <div class="mask"></div>
+    <!-- 定义侧边栏容器 -->
+    <div class="nav">
+        <ul>
+            <li><a><img class="avatar_big" src="images/guest.png" /></a></li>
+            <li><a>我的余额</a></li>
+            <li><a>我的订单</a></li>
+            <li><a>我的收藏</a></li>
+            <li><a>我的积分</a></li>
+            <li><a>个人中心</a></li>
+        </ul>
+    </div>
+</body>
+<script src="js/common.js" type="text/javascript"></script>
+<script type="text/javascript">
+// 分别获取元素：用户头像、遮罩和侧边栏
+var btn = document.querySelector('.avatar_small'),
+    mask = document.querySelector('.mask'),
+    nav = document.querySelector('.nav');
+// 给用户头像添加点击事件
+btn.addEventListener('click', function() {
+    // 展示遮罩
+    mask.style.display = 'block';
+    // 滑出侧边栏
+    nav.style.left = '0';
+}, false);
+// 给遮罩添加点击事件
+mask.addEventListener('click', function() {
+    // 隐藏遮罩
+    mask.style.display = 'none';
+    // 隐藏侧边栏
+    nav.style.left = '-4rem';
+}, false);
+</script>
+
+</html>
