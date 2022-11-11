@@ -2,6 +2,8 @@ function setRem() {
   var ui_w = 375;
   var client_w =
     document.documentElement.clientWidth || document.body.clientWidth;
+  client_w = client_w < 368 ? 368 : client_w;
+  client_w = client_w > 1000 ? 1000 : client_w;
   var html = document.querySelector("html");
   html.style.fontSize = (client_w / ui_w) * 10 + "px";
 }

@@ -2,3 +2,282 @@
   margin: 0;
   padding: 0;
 }
+body,
+html {
+  font-size: 10px;
+  min-width: 368px;
+  max-width: 1000px;
+  background-color: #f5f5f5;
+}
+a {
+  text-decoration: none;
+}
+header {
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  line-height: 4rem;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  z-index: 4;
+}
+header .sy {
+  margin-top: 1rem;
+  width: 10rem;
+  height: 2.5rem;
+}
+header .boult {
+  position: absolute;
+  top: 0.8rem;
+  left: 1rem;
+  width: 3rem;
+  width: 4rem;
+  height: 3rem;
+}
+header .boult img {
+  width: 100%;
+  height: 100%;
+}
+header .home {
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  width: 3rem;
+  width: 4rem;
+  height: 3rem;
+}
+header .home img {
+  width: 100%;
+  height: 100%;
+}
+/* 导航栏 */
+nav {
+  width: 100%;
+  margin-top: 4rem;
+}
+nav ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+}
+nav ul .bottom {
+  border-bottom: 5px solid #e6454d;
+}
+nav ul li {
+  width: 20%;
+  height: 4rem;
+  background-color: #ffffff;
+  font-size: 1.4rem;
+  line-height: 4rem;
+  text-align: center;
+  border-bottom: 1px solid #d8d8d8;
+}
+nav ul li a {
+  color: #939393;
+}
+nav ul li .color {
+  color: #e6454d;
+}
+nav ul li span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/58suyun_13.png) no-repeat 3px 13px;
+  background-size: 80%;
+}
+/* 面包车部分 */
+.atk {
+  width: 100%;
+  height: 15rem;
+  text-align: center;
+  background-color: #ffffff;
+  position: relative;
+  border-bottom: 10px solid #f5f5f5;
+}
+.atk .logo {
+  width: 3%;
+  position: absolute;
+  top: 5rem;
+  right: 2rem;
+}
+.atk img {
+  width: 55%;
+}
+.atk ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.atk ul li {
+  height: 4rem;
+  width: 33%;
+}
+.atk ul li p {
+  color: #686868;
+  font-size: 1.4rem;
+}
+.atk ul li span {
+  color: #b4b4b4;
+  font-size: 1rem;
+}
+.bourn {
+  width: 100%;
+  background-color: #ffffff;
+  list-style: none;
+}
+.bourn ul {
+  display: flex;
+  flex-direction: column;
+}
+.bourn ul .bg {
+  border-bottom: 1px solid #d8d8d8;
+  position: relative;
+}
+.bourn ul .bg .jt {
+  width: 3%;
+  height: 20%;
+  position: absolute;
+  top: 34px;
+  right: 51px;
+}
+.bourn ul li {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+}
+.bourn ul li .my {
+  border: none;
+}
+.bourn ul li a {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  line-height: 6rem;
+  text-align: center;
+}
+.bourn ul li p {
+  display: inline-block;
+  width: 70%;
+  height: 5rem;
+  padding: 1.5rem 0;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d8d8d8;
+}
+.bourn ul li p .md {
+  border: none;
+  position: relative;
+  color: #c0c0c0;
+}
+.bourn ul li p span {
+  display: inline-block;
+  height: 2rem;
+  width: 99%;
+  color: #575757;
+  border-right: 1px solid #cccccc;
+}
+.bourn ul li .img {
+  width: 19%;
+  height: 97%;
+}
+.bourn ul .logo {
+  width: 90%;
+  height: 80%;
+  margin-top: 0.6rem;
+  margin-left: 1rem;
+}
+/* 预约底部 */
+footer {
+  width: 93%;
+  margin: 0 auto;
+  height: 15rem;
+  margin-top: 10rem;
+  background-color: #ffffff;
+}
+footer p {
+  display: inline-block;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+  color: #737373;
+  font-size: 1.5rem;
+  line-height: 5rem;
+  border-bottom: 1px solid #dadada;
+}
+footer p span {
+  font-size: 2rem;
+  color: #c84b56;
+}
+footer .actual {
+  height: 4rem;
+  border: none;
+  line-height: 4rem ;
+  font-size: 1.2rem;
+  color: #aeaeae;
+}
+footer .footer {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+footer .footer a {
+  text-align: center;
+  line-height: 6rem;
+  color: #fcffea;
+  font-size: 1.7rem;
+  font-weight: 100;
+  display: inline-block;
+}
+footer .footer .order {
+  width: 30%;
+  height: 100%;
+  background-color: #b03f43;
+}
+footer .footer .real {
+  width: 70%;
+  height: 100%;
+  background-color: #e6454a;
+}
+/* 遮罩 */
+.shade {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  opacity: 0.2;
+  background-color: #000000;
+}
+/* 侧边栏 */
+.sidebar {
+  position: absolute;
+  z-index: 2;
+  left: -25rem;
+  top: 0;
+  width: 25rem;
+  height: 100%;
+  transition: left linear 0.4s;
+  background-color: #555555;
+  z-index: 5;
+}
+.sidebar ul {
+  list-style: none;
+}
+.sidebar ul li a {
+  display: block;
+  padding: 2rem 0;
+  text-align: center;
+  color: #eeeeee;
+  font-size: 2rem;
+  border-bottom: 1px solid #767676;
+}
+.sidebar ul li a img {
+  width: 11rem;
+}
