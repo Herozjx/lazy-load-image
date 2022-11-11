@@ -3,7 +3,7 @@ function setRem() {
   var client_w =
     document.documentElement.clientWidth || document.body.clientWidth;
   var html = document.querySelector("html");
-  html.style.fontSize = (client_w / ui_w) * 10 + "px";
+  html.style.fontSize = (client_w / ui_w) * 5 + "px";
 }
 setRem();
 var timer = null;
