@@ -2,3 +2,293 @@
 	margin:  0;
 	padding: 0;
 }
+body,html{
+	font-size: 10px;
+	min-width: 365px;
+	max-width: 800px;
+	background-color: #eeeeee;
+}
+header{
+	width: 100%;
+	height: 3rem;
+	position: fixed;
+	top: 0;
+	background-color: #e6071b;
+	line-height: 3rem;
+	text-align: center;
+	color: white;
+	font-size: 1.5rem;
+	.boult{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 3rem;
+		height: 3rem;
+		background: url(../images/back.png) no-repeat center;
+		background-size: 80% 80%;
+	}
+	.home{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 3rem;
+		height: 3rem;
+		background: url(../images/qhome.png) no-repeat center;
+		background-size: 55% 55%;
+	}
+}
+/* 交易成功导航栏 */
+nav{
+	width: 100%;
+	margin-top: 3rem;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	font-size: 1.4rem;
+	color: white;
+	text-indent: 2rem;
+	background: url(../images/supchenge.png);
+	background-size:cover;
+	span{
+		display: inline-block;
+		width: 2rem;
+		height: 2rem;
+		margin-left: -1rem;
+		vertical-align: middle;
+		background: url(../images/supchok.png) no-repeat;
+		background-size: cover;
+	}
+}
+
+/* 地址 */
+.site{
+	width: 100%;
+	height: 8rem;
+	background-color: #ffffff;
+	display: flex;
+	padding: 1rem 0rem;
+	box-sizing: border-box;
+	margin-bottom: 1rem;
+	.logo{
+		width: 2rem;
+		height: 4rem;
+		padding: 0 0.5rem;
+		img{
+			display:block;
+			padding: 0.5rem 0.5rem;
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+		
+	}
+	.address{
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		p{
+			color: #666666;
+		}
+	}
+}
+.borderBottom(@px:1px,@color:#d8d8d8){
+	border-bottom: @px solid @color;
+}
+/* 商品 主体部分 */
+main{
+	width: 100%;
+	margin-bottom: 1rem;
+	.nav{
+		height: 2.5rem;
+		line-height: 2.5rem;
+		color: #666666;
+		display: flex;
+		.borderBottom();
+		background-color: #ffffff;
+		span{
+			display: inline-block;
+			width: 2.5rem;
+			height: 2.5rem;
+			background: url(../images/gift1.png) no-repeat center;
+			background-size:60% 60%;
+		}
+		
+	}
+	.list{
+		list-style: none;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		// background-color: #e6071b;
+		li{
+			width: 94.5%;
+			height: 6.5rem;
+			padding: 1rem;
+			.borderBottom();
+			display: flex;
+			justify-content: space-between;
+			img{
+				width: 4.5rem;
+				height: 4.5rem;
+				margin-top: 0.5rem;
+			}
+			.intro{
+				width: 50%;
+				margin-left: -8rem;
+				display: flex;
+				flex-direction: column;
+				p{
+					color: #666666;
+				}
+				.color{
+					color: #ababab;
+				}
+				.num{
+					color: #666692;
+				}
+			}
+			.price{
+				color: #e6071b;
+			}
+			
+		}
+	}
+	.Store{
+		width: 94.5%;
+		height: 2rem;
+		line-height: 2rem;
+		display: flex;
+		padding: 0 1rem 0 1rem;
+		justify-content: space-between;
+		background-color: #ffffff;
+		.price{
+			color: #e6071b;
+		}
+	}
+}
+/* 练习卖家 */
+.tel{
+	width: 100%;
+	height: 6rem;
+	margin-bottom: 1rem;
+	background-color: #ffffff;
+	.nav{
+		height: 2.5rem;
+		line-height: 2.5rem;
+		color: #666666;
+		display: flex;
+		background-color: #ffffff;
+		span{
+			display: inline-block;
+			width: 2.5rem;
+			height: 2.5rem;
+			background: url(../images/gift1.png) no-repeat center;
+			background-size:60% 60%;
+		}
+	}
+	.store{
+		.borderBottom();
+		width: 100%;
+		height: 3.5rem;
+		button{
+			margin-left: 0.1rem;
+			width: 49%;
+			font-size: 1.2rem;
+			color: #828282;
+			border-radius: 0.4rem;
+			border: 1px solid #d3d3d3;
+			background-color: #ffffff;
+			cursor: pointer;
+			span{
+				display: inline-block;
+				width: 2rem;
+				height: 2rem;
+				background-color: aqua;
+				vertical-align: middle;
+			}
+			&:nth-of-type(1) span{
+				background: url(../images/callout.png) no-repeat;
+				background-size: cover;
+			}
+			&:nth-of-type(2) span{
+				background: url(../images/comein.png) no-repeat -0.1rem -0.1rem;
+				background-size: cover;
+			}
+		}
+	}
+}
+.orderid{
+	width: 100%;
+	padding: 0.5rem 0;
+	margin-bottom: 1rem;
+	background-color: #ffffff;
+	p{
+		height: 2.1rem;
+		font-size: 1.3rem;
+		color: #938a88;
+		display: flex;
+		padding: 0 0.6rem;
+		justify-content: space-between;
+		span{
+			display: inline-block;
+			width: 4rem;
+			height: 2rem;
+			line-height: 2rem;
+			text-align: center;
+			border-radius: 1rem;
+			border: 1px solid #d8d8d8;
+			cursor: pointer;
+		}
+	}
+}
+/* 底部 */
+footer{
+	width: 100%;
+	height: 20rem;
+	.borderBottom();
+	background-color: #ffffff;
+	p{
+		text-indent: 1rem;
+		color: #333333;
+		height: 2rem;
+		line-height: 2rem;
+	}
+	.show{
+		list-style: none;
+		padding: 1rem 5%;
+		display: flex;
+		height: 15.5rem;
+		justify-content: space-around;
+		li{
+			width: 33%;
+			img{
+				width: 95%;
+			}
+			p{
+				height: 3rem;
+				line-height: 3rem;
+			}
+			span{
+				color: #e6071b;
+			}
+		}
+	}
+	.delete{
+		margin-top: 0.6rem;
+		width: 100%;
+		height: 4rem;
+		line-height: 4rem;
+		background-color: #ffffff;
+		span{
+			width: 6rem;
+			height: 2rem;
+			line-height: 2rem;
+			border-radius: 1rem;
+			float: right;
+			margin-top: 1rem;
+			margin-right: 1rem;
+			border: 1px solid #d8d8d8;
+			cursor: pointer;
+		}
+	}
+}
