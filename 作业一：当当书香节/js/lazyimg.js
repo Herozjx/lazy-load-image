@@ -1,8 +1,8 @@
+var flg = true;
 function lazyImg() {
   // 节流
-  var flg = true;
   if (flg) {
-    var flg = false;
+    flg = false;
     // 获取屏幕设备的高
     var clientHeight =
       document.documentElement.clientHeight || document.body.clientHeight;
@@ -23,10 +23,11 @@ function lazyImg() {
         img.removeAttribute("data-realsrc");
       }
     }
+    setTimeout(function () {
+      // 打开节流阀
+      flg = true;
+    }, 150);
   }
 }
-setTimeout(function () {
-  flg = true;
-  window.onload = lazyImg;
-  window.onscroll = lazyImg;
-}, 100);
+window.onload = lazyImg;
+window.onscroll = lazyImg;
